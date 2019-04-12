@@ -1,0 +1,130 @@
+
+\documentclass[compress]{beamer}
+
+% Beamer theme.
+\usetheme{Madrid}
+
+\useoutertheme[subsection=false]{miniframes}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[serbianc,serbian,english]{babel}
+
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{shapes, arrows, shadows, positioning}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{color}
+
+\usepackage{url}
+\urlstyle{sf}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Commands.
+
+\newcommand{\DrawRect}[6]{
+	\node[rectangle, draw=black, fill=#5,
+		minimum width=#3 cm, minimum height=#4 cm] (#1) at #2 {#6};
+}
+
+\newcommand{\DrawLine}[2]{
+	\draw [-] #1 -- #2;
+}
+
+\newcommand{\DrawLineOffset}[4]{
+	\draw [-] ($#1+#2$) -- ($#3+#4$);
+}
+
+\newcommand{\DrawLineLabel}[3]{
+	\draw [-] #1 -- #2 node [midway, auto] {#3};
+}
+
+\newcommand{\DrawLineLink}[4]{
+	\draw [-] #1 -- #2 node [midway, auto] {\begin{tabular}{c} #3 \\ #4 \end{tabular}};
+}
+
+\newcommand{\Better}[1]{
+	\textcolor{green}{#1}
+}
+\newcommand{\Worse}[1]{
+	\textcolor{red}{#1}
+}
+
+\newcommand{\Prj}[1]{
+	\textit{\url{#1}}
+}
+
+
+% Block styles.
+\tikzstyle{decision} = [
+	diamond, draw, fill=blue!20,
+	text width=4.5em, text badly centered, node distance=3cm, inner sep=0pt
+]
+\tikzstyle{block} = [
+	rectangle, draw, fill=blue!20,
+	text width=7em, text centered, rounded corners, minimum height=4em
+]
+\tikzstyle{image} = [
+	rectangle, draw, fill=white, draw=black, %TODO Change to white
+	text centered
+]
+\tikzstyle{arrow} = [draw, -latex']
+\tikzstyle{double_arrow} = [draw, latex'-latex']
+\tikzstyle{cloud} = [
+	draw, ellipse, fill=red!20, node distance=3cm,
+    minimum height=2em
+]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Aрхитектура игрица}
+\author{ЛПРС2}
+\institute{РТ-РК}
+\date{\today}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TODO:
+% - Табеле мало лепши код да буде.
+% - Текстуре.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{\titlepage}
+
+\section{Увод}
+\subsection{Увод}
+\begin{frame}
+	\frametitle{\textbf{Правила}}
+	
+	\begin{itemize}
+		\item Избор пројеката до TODO
+		\item Списак пројеката je на \url{github.com/LPRS2/projects_2019}
+		\item Пријава pull request-om на списак
+		\item Ко први пројекту њему пројекат
+		\item Детаљнија спецификација пројеката ће бити окачена на github-у
+		\item Пријава пројектиних репозиторијума на github-у
+			исто pull request-ом
+	\end{itemize}
+\end{frame}
+
+
+
+\section{Крај}
+\subsection{Крај}
+\begin{frame}
+	\frametitle{\textbf{Крај}}
+	\begin{itemize}
+		\item Питања
+	\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
