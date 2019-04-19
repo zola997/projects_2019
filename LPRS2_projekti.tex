@@ -1,5 +1,5 @@
 
-\documentclass[compress]{beamer}
+\documentclass[compress, t]{beamer}
 
 % Beamer theme.
 \usetheme{Madrid}
@@ -10,7 +10,7 @@
 
 \usepackage[T1,T2A]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[serbianc,serbian,english]{babel}
+\usepackage[serbianc, serbian, english]{babel}
 
 \usepackage{tikz}
 \usetikzlibrary{calc}
@@ -69,14 +69,14 @@
 	text width=7em, text centered, rounded corners, minimum height=4em
 ]
 \tikzstyle{image} = [
-	rectangle, draw, fill=white, draw=black, %TODO Change to white
+	rectangle, draw, fill=white, draw=black,
 	text centered
 ]
 \tikzstyle{arrow} = [draw, -latex']
 \tikzstyle{double_arrow} = [draw, latex'-latex']
 \tikzstyle{cloud} = [
 	draw, ellipse, fill=red!20, node distance=3cm,
-    minimum height=2em
+	minimum height=2em
 ]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -86,8 +86,11 @@
 \institute{РТ-РК}
 \date{\today}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
+
+\selectlanguage{serbianc}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %TODO:
@@ -115,6 +118,10 @@
 			исто pull request-ом
 	\end{itemize}
 \end{frame}
+
+\section{Пројекти}
+\input{Projects.gen.tex}
+
 
 
 

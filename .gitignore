@@ -29,3 +29,5 @@
 *.snm
 *.fdb_latexmk
 *.fls
+
+*.gen.tex
