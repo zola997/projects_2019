@@ -488,7 +488,55 @@ projects = Project[
 			doc         = "",
 		),
 	),
-]	
+	Project(
+		name             = "T-Rex, Run!",
+		points           = 45,
+		min_team_members = 3,
+		team = Team(
+			pre_registration = "Andrija, Denis, Strahinja",
+			members = Student[
+				Student(
+					name    = "",
+					surname = "",
+					index   = "RA-xxx/20yy",
+					email   = "@",
+					points  = 0,
+				),
+				Student(
+					name    = "",
+					surname = "",
+					index   = "RA-xxx/20yy",
+					email   = "@",
+					points  = 0,
+				),
+				Student(
+					name    = "",
+					surname = "",
+					index   = "RA-xxx/20yy",
+					email   = "@",
+					points  = 0,
+				),
+			],
+		),
+		spec = Spec(
+			sequel       = false,
+			have_support = false,
+			text = """
+			""",
+			resources = URL[
+				URL(""),
+				URL(""),
+			],
+		),
+		solution = Solution(
+			repo        = "",
+			youtube     = "",
+			release_bit = "",
+			doc         = "",
+		),
+	),
+]
+
 
 additional = URL[
 	# Making bit file.
