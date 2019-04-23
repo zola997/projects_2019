@@ -1378,6 +1378,198 @@ projects = Project[
 		),
 	),
 	Project(
+		name             = "Go",
+		points           = 45,
+		min_team_members = 3,
+		team = Team(
+			pre_registration = "",
+			members = Student[
+				Student(
+					name    = "",
+					surname = "",
+					index   = "RA-xxx/20yy",
+					email   = "@",
+					points  = 0,
+				),
+				Student(
+					name    = "",
+					surname = "",
+					index   = "RA-xxx/20yy",
+					email   = "@",
+					points  = 0,
+				),
+				Student(
+					name    = "",
+					surname = "",
+					index   = "RA-xxx/20yy",
+					email   = "@",
+					points  = 0,
+				),
+			],
+		),
+		spec = Spec(
+			sequel       = false,
+			have_support = false,
+			text = """
+			""",
+			resources = URL[
+				URL("https://www.youtube.com/watch?v=AT0j4gZxG2w"),
+			],
+			sequel_resources = Dict{String, Solution}(
+			),
+		),
+		solution = Solution(
+			repo        = URL("https://github.com/X/Y"),
+			youtube     = URL(""),
+			release_bit = URL(""),
+			doc         = URL(""),
+		),
+	),
+	Project(
+		name             = "Lunar Pool",
+		points           = 45,
+		min_team_members = 3,
+		team = Team(
+			pre_registration = "",
+			members = Student[
+				Student(
+					name    = "",
+					surname = "",
+					index   = "RA-xxx/20yy",
+					email   = "@",
+					points  = 0,
+				),
+				Student(
+					name    = "",
+					surname = "",
+					index   = "RA-xxx/20yy",
+					email   = "@",
+					points  = 0,
+				),
+				Student(
+					name    = "",
+					surname = "",
+					index   = "RA-xxx/20yy",
+					email   = "@",
+					points  = 0,
+				),
+			],
+		),
+		spec = Spec(
+			sequel       = false,
+			have_support = false,
+			text = """
+			""",
+			resources = URL[
+				URL("https://www.youtube.com/watch?v=3Aih37orQKY"),
+			],
+			sequel_resources = Dict{String, Solution}(
+			),
+		),
+		solution = Solution(
+			repo        = URL("https://github.com/X/Y"),
+			youtube     = URL(""),
+			release_bit = URL(""),
+			doc         = URL(""),
+		),
+	),
+	Project(
+		name             = "Chuzzle",
+		points           = 45,
+		min_team_members = 3,
+		team = Team(
+			pre_registration = "",
+			members = Student[
+				Student(
+					name    = "",
+					surname = "",
+					index   = "RA-xxx/20yy",
+					email   = "@",
+					points  = 0,
+				),
+				Student(
+					name    = "",
+					surname = "",
+					index   = "RA-xxx/20yy",
+					email   = "@",
+					points  = 0,
+				),
+				Student(
+					name    = "",
+					surname = "",
+					index   = "RA-xxx/20yy",
+					email   = "@",
+					points  = 0,
+				),
+			],
+		),
+		spec = Spec(
+			sequel       = false,
+			have_support = false,
+			text = """
+			""",
+			resources = URL[
+				URL("https://www.youtube.com/watch?v=4vZnNZ_G6Qk"),
+			],
+			sequel_resources = Dict{String, Solution}(
+			),
+		),
+		solution = Solution(
+			repo        = URL("https://github.com/X/Y"),
+			youtube     = URL(""),
+			release_bit = URL(""),
+			doc         = URL(""),
+		),
+	),
+	Project(
+		name             = "Zuma",
+		points           = 45,
+		min_team_members = 3,
+		team = Team(
+			pre_registration = "",
+			members = Student[
+				Student(
+					name    = "",
+					surname = "",
+					index   = "RA-xxx/20yy",
+					email   = "@",
+					points  = 0,
+				),
+				Student(
+					name    = "",
+					surname = "",
+					index   = "RA-xxx/20yy",
+					email   = "@",
+					points  = 0,
+				),
+				Student(
+					name    = "",
+					surname = "",
+					index   = "RA-xxx/20yy",
+					email   = "@",
+					points  = 0,
+				),
+			],
+		),
+		spec = Spec(
+			sequel       = false,
+			have_support = false,
+			text = """
+			""",
+			resources = URL[
+				URL("https://www.youtube.com/watch?v=-Ou5Bco1sHM"),
+			],
+			sequel_resources = Dict{String, Solution}(
+			),
+		),
+		solution = Solution(
+			repo        = URL("https://github.com/X/Y"),
+			youtube     = URL(""),
+			release_bit = URL(""),
+			doc         = URL(""),
+		),
+	),
+	Project(
 		name             = "Save the Day",
 		points           = 45,
 		min_team_members = 3,
