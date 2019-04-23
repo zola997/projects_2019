@@ -243,11 +243,15 @@ projects = Project[
 			have_support = false,
 			text = """
 			""",
-			resources = URL[#TODO
-				URL("https://github.com/KakucaNebojsa/Boomberman"),
-				URL(""),
+			resources = URL[
 			],
 			sequel_resources = Dict{String, Solution}(
+				"Boomberman" => Solution(
+					repo        = URL("https://github.com/KakucaNebojsa/Boomberman"),
+					youtube     = URL("https://www.youtube.com/watch?v=V5IfcWc_Ebo"),
+					release_bit = URL("https://github.com/KakucaNebojsa/Boomberman/blob/master/Bomberman.bit"),
+					doc         = URL("https://github.com/KakucaNebojsa/Boomberman/blob/master/Bomberman-dokumentacija.docx"),
+				),
 			),
 		),
 		solution = Solution(
@@ -258,7 +262,7 @@ projects = Project[
 		),
 	),
 	Project(
-		name             = "World's Hardest Game",
+		name             = "The World's Hardest Game",
 		points           = 45,
 		min_team_members = 3,
 		team = Team(
@@ -291,12 +295,17 @@ projects = Project[
 			sequel       = true,
 			have_support = false,
 			text = """
+			- Više levela
+			- Neki novi feature
+			- Lepše
 			""",
-			resources = URL[#TODO
-				URL("https://github.com/AleksaArsic/LPRS2-WorldsHardestGame"),
-				URL(""),
-			],
 			sequel_resources = Dict{String, Solution}(
+				"The World's Hardest Game" => Solution(
+					repo        = URL("https://github.com/AleksaArsic/LPRS2-WorldsHardestGame"),
+					youtube     = URL("https://youtu.be/WKC8rEK4Ln4"),
+					release_bit = URL("https://github.com/AleksaArsic/LPRS2-WorldsHardestGame/blob/master/LPRS2_Asteroids_game-master/WorldsHardestGame.bit"),
+					doc         = URL("https://github.com/AleksaArsic/LPRS2-WorldsHardestGame/blob/master/WorldsHardestGame.docx"),
+				),
 			),
 		),
 		solution = Solution(
@@ -1138,11 +1147,59 @@ projects = Project[
 		),
 	),
 	Project(
+		name             = "AirXonix",
+		points           = 45,
+		min_team_members = 3,
+		team = Team(
+			pre_registration = "Katarina, Nikolina, Nikolina",
+			members = Student[
+				Student(
+					name    = "",
+					surname = "",
+					index   = "RA-xxx/20yy",
+					email   = "@",
+					points  = 0,
+				),
+				Student(
+					name    = "",
+					surname = "",
+					index   = "RA-xxx/20yy",
+					email   = "@",
+					points  = 0,
+				),
+				Student(
+					name    = "",
+					surname = "",
+					index   = "RA-xxx/20yy",
+					email   = "@",
+					points  = 0,
+				),
+			],
+		),
+		spec = Spec(
+			sequel       = false,
+			have_support = false,
+			text = """
+			""",
+			resources = URL[
+				URL("https://www.youtube.com/watch?v=QshZeuyFxvk"),
+			],
+			sequel_resources = Dict{String, Solution}(
+			),
+		),
+		solution = Solution(
+			repo        = URL("https://github.com/X/Y"),
+			youtube     = URL(""),
+			release_bit = URL(""),
+			doc         = URL(""),
+		),
+	),
+	Project(
 		name             = "Lode Runner",
 		points           = 45,
 		min_team_members = 2,
 		team = Team(
-			pre_registration = "Mihići",
+			pre_registration = "",
 			members = Student[
 				Student(
 					name    = "Filip",
