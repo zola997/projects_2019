@@ -84,38 +84,6 @@ N_students = sum(map(no_of_students, projects))
 @show N_students
 
 ###############################################################################
-# Generating tex.
-
-if true
-	open("Projects.gen.tex", "w") do f
-		w(args...) = println(f, args...)
-		for (idx, p) in enumerate(projects[1:2])
-			w("\\subsection{Пројекат $idx}")
-			w("\\begin{frame}")
-			w("	\\frametitle{\\textbf{$(p.name)}}")
-			
-			w("	\\begin{itemize}")
-				i(s) = w("		\\item " * s)
-				if p.spec.sequel
-					if p.spec.have_support
-						h = " (уз помоћ старијих колега)"
-					else
-						h = ""
-					end
-					i("Наставак од прошле године" * h)
-				end
-				if p.team.pre_registration != ""
-					i("Заузето ($(p.team.pre_registration))")
-				end
-			w("	\\end{itemize}")
-			w("\\end{frame}")
-			w("")
-		end
-	end
-	run(`latexmk -silent -pdf LPRS2_projekti.tex`)
-end
-
-###############################################################################
 # Project stats.
 
 function project_taken(project::Project)
@@ -142,6 +110,45 @@ if true
 	for p in projects
 		println(p.name)
 	end
+end
+
+###############################################################################
+# Generating tex.
+
+if true
+	open("Projects.gen.tex", "w") do f
+		w(args...) = println(f, args...)
+		for (idx, p) in enumerate(projects)
+			w("\\subsection{Пројекат $idx}")
+			w("\\begin{frame}")
+			w("	\\frametitle{\\textbf{$(p.name)}}")
+			
+			w("	\\begin{itemize}")
+				i(s) = w("		\\item " * s)
+				if p.spec.sequel
+					if p.spec.have_support
+						h = " (уз помоћ старијих колега)"
+					else
+						h = ""
+					end
+					i("Наставак од прошле године" * h)
+				end
+				if p.team.pre_registration != ""
+					i("Заузето ($(p.team.pre_registration))")
+				end
+				
+				for r in p.spec.resources
+					i("\\url{$r}")
+				end
+				for (n, s) in p.spec.sequel_resources
+					i("\\url{$(s.youtube)}")
+				end
+			w("	\\end{itemize}")
+			w("\\end{frame}")
+			w("")
+		end
+	end
+	run(`latexmk -silent -pdf LPRS2_projekti.tex`)
 end
 
 ###############################################################################
