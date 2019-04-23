@@ -138,10 +138,14 @@ if true
 				end
 				
 				for r in p.spec.resources
-					i("\\url{$r}")
+					if r != ""
+						i("\\url{$r}")
+					end
 				end
 				for (n, s) in p.spec.sequel_resources
-					i("\\url{$(s.youtube)}")
+					if s.youtube != ""
+						i("\\url{$(s.youtube)}")
+					end
 				end
 			w("	\\end{itemize}")
 			w("\\end{frame}")
