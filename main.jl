@@ -26,16 +26,6 @@ gen_struct_and_constructor_with_must_specify(
 const URL = String
 
 gen_struct_and_constructor_with_must_specify(
-	:Spec,
-	false,
-	
-	:sequel,         :Bool,
-	:have_support,   :Bool,
-	:text,           :String,
-	:resources,      :(Vector{URL}),
-)
-
-gen_struct_and_constructor_with_must_specify(
 	:Solution,
 	false,
 	
@@ -48,6 +38,17 @@ gen_struct_and_constructor_with_must_specify(
 	# Short project documentation.
 	# Could set URL to file in github master blob.
 	:doc,            :URL,
+)
+
+gen_struct_and_constructor_with_must_specify(
+	:Spec,
+	false,
+	
+	:sequel,           :Bool,
+	:have_support,     :Bool,
+	:text,             :String,
+	:resources,        :(Vector{URL}),
+	:sequel_resources, :(Dict{String, Solution}),
 )
 
 gen_struct_and_constructor_with_must_specify(
@@ -67,13 +68,24 @@ gen_struct_and_constructor_with_must_specify(
 include("projects_and_teams.jl")
 
 ###############################################################################
-
-#TODO Sum all marks, so we could check if studends changed mark field.
+# Common stats.
 
 N_projects = length(projects)
 @show N_projects
 
+function no_of_students(project::Project)
+	if project.team.members[1].name == "Name"
+		return 0
+	else
+		return length(project.team.members)
+	end
+end
+N_students = sum(map(no_of_students, projects))
+@show N_students
+
+###############################################################################
 # Generating tex.
+
 if true
 	open("Projects.gen.tex", "w") do f
 		w(args...) = println(f, args...)
@@ -103,16 +115,8 @@ if true
 	run(`latexmk -silent -pdf LPRS2_projekti.tex`)
 end
 
-
-function no_of_students(project::Project)
-	if project.team.members[1].name == "Name"
-		return 0
-	else
-		return length(project.team.members)
-	end
-end
-N_students = sum(map(no_of_students, projects))
-@show N_students
+###############################################################################
+# Project stats.
 
 function project_taken(project::Project)
 	!any(map((member) -> member.name == "Name", project.team.members))
@@ -124,6 +128,7 @@ function project_done(project::Project)
 		#s.release_bit != "" 
 	return done
 end
+
 if false
 	for project in projects
 		if project_taken(project) && !project_done(project)
@@ -131,6 +136,17 @@ if false
 		end
 	end
 end
+
+if true
+	println("Project names:")
+	for p in projects
+		println(p.name)
+	end
+end
+
+###############################################################################
+
+#TODO Sum all marks, so we could check if studends changed mark field.
 
 #=
 if false
