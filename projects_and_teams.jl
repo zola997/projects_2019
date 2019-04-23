@@ -187,12 +187,18 @@ projects = Project[
 			sequel       = true,
 			have_support = false,
 			text = """
+			- Gameplay dovršiti
 			""",
 			resources = URL[
-				URL("https://github.com/Sandra2606996/MSAK_tetris"),
 				URL("https://github.com/boza94/pizeo_buzz"),
 			],
 			sequel_resources = Dict{String, Solution}(
+				"Advance Tetris" => Solution(
+					repo        = URL("https://github.com/Sandra2606996/MSAK_tetris"),
+					youtube     = URL("https://www.youtube.com/watch?v=Q_IEFTvD00M"),
+					release_bit = URL("https://github.com/Sandra2606996/MSAK_tetris/blob/master/tetris.bit"),
+					doc         = URL("https://github.com/Sandra2606996/MSAK_tetris/blob/master/TETRIS.docx"),
+				),
 			),
 		),
 		solution = Solution(
@@ -237,7 +243,7 @@ projects = Project[
 			have_support = false,
 			text = """
 			""",
-			resources = URL[
+			resources = URL[#TODO
 				URL("https://github.com/KakucaNebojsa/Boomberman"),
 				URL(""),
 			],
@@ -286,7 +292,7 @@ projects = Project[
 			have_support = false,
 			text = """
 			""",
-			resources = URL[
+			resources = URL[#TODO
 				URL("https://github.com/AleksaArsic/LPRS2-WorldsHardestGame"),
 				URL(""),
 			],
@@ -383,12 +389,20 @@ projects = Project[
 			sequel       = true,
 			have_support = false,
 			text = """
+			Doraditi igru.
 			""",
 			resources = URL[
-				URL("https://github.com/uros96/potapanjeBrodica"),
-				URL(""),
 			],
 			sequel_resources = Dict{String, Solution}(
+				"Potapanje brodića" => Solution(
+					repo        = URL("https://github.com/uros96/potapanjeBrodica"),
+					youtube     = URL("https://www.youtube.com/watch?v=carpYddvtfQ"),
+					release_bit = URL[
+						URL("https://github.com/uros96/potapanjeBrodica/blob/master/potapanje_brodica_master.bit"),
+						URL("https://github.com/uros96/potapanjeBrodica/blob/master/potapanje_brodica_slave.bit"),
+					],
+					doc         = URL("https://github.com/uros96/potapanjeBrodica/blob/master/LPRS2-Potapanje_brodica.pdf"),
+				),
 			),
 		),
 		solution = Solution(
@@ -546,11 +560,60 @@ projects = Project[
 		),
 	),
 	Project(
+		name             = "Red Bouncing Ball Spikes",
+		points           = 45,
+		min_team_members = 3,
+		team = Team(
+			pre_registration = "Danilo, Darko, Bojan",
+			members = Student[
+				Student(
+					name    = "",
+					surname = "",
+					index   = "RA-xxx/20yy",
+					email   = "@",
+					points  = 0,
+				),
+				Student(
+					name    = "",
+					surname = "",
+					index   = "RA-xxx/20yy",
+					email   = "@",
+					points  = 0,
+				),
+				Student(
+					name    = "",
+					surname = "",
+					index   = "RA-xxx/20yy",
+					email   = "@",
+					points  = 0,
+				),
+			],
+		),
+		spec = Spec(
+			sequel       = false,
+			have_support = false,
+			text = """
+			""",
+			resources = URL[
+				URL("https://www.youtube.com/watch?v=_vkTPFVyKoo"),
+				URL("https://github.com/vukse95/super_mario"),
+			],
+			sequel_resources = Dict{String, Solution}(
+			),
+		),
+		solution = Solution(
+			repo        = URL("https://github.com/X/Y"),
+			youtube     = URL(""),
+			release_bit = URL(""),
+			doc         = URL(""),
+		),
+	),
+	Project(
 		name             = "Duck Hunt",
 		points           = 45,
 		min_team_members = 3,
 		team = Team(
-			pre_registration = "",
+			pre_registration = "Aleksandar, Pavle, Miloš",
 			members = Student[
 				Student(
 					name    = "",
@@ -859,68 +922,11 @@ projects = Project[
 		),
 	),
 	Project(
-		name             = "Potapanje brodića",
-		points           = 45,
-		min_team_members = 3,
-		team = Team(
-			pre_registration = "",
-			members = Student[
-				Student(
-					name    = "",
-					surname = "",
-					index   = "RA-xxx/20yy",
-					email   = "@",
-					points  = 0,
-				),
-				Student(
-					name    = "",
-					surname = "",
-					index   = "RA-xxx/20yy",
-					email   = "@",
-					points  = 0,
-				),
-				Student(
-					name    = "",
-					surname = "",
-					index   = "RA-xxx/20yy",
-					email   = "@",
-					points  = 0,
-				),
-			],
-		),
-		spec = Spec(
-			sequel       = true,
-			have_support = false,
-			text = """
-			Doraditi igru.
-			""",
-			resources = URL[
-			],
-			sequel_resources = Dict{String, Solution}(
-				"Potapanje brodića" => Solution(
-					repo        = URL("https://github.com/uros96/potapanjeBrodica"),
-					youtube     = URL("https://www.youtube.com/watch?v=carpYddvtfQ"),
-					release_bit = URL[
-						URL("https://github.com/uros96/potapanjeBrodica/blob/master/potapanje_brodica_master.bit"),
-						URL("https://github.com/uros96/potapanjeBrodica/blob/master/potapanje_brodica_slave.bit"),
-					],
-					doc         = URL("https://github.com/uros96/potapanjeBrodica/blob/master/LPRS2-Potapanje_brodica.pdf"),
-				),
-			),
-		),
-		solution = Solution(
-			repo        = URL("https://github.com/X/Y"),
-			youtube     = URL(""),
-			release_bit = URL(""),
-			doc         = URL(""),
-		),
-	),
-	Project(
 		name             = "Tenkići",
 		points           = 45,
 		min_team_members = 3,
 		team = Team(
-			pre_registration = "",
+			pre_registration = "Darko, Saša, Marko",
 			members = Student[
 				Student(
 					name    = "",
@@ -1121,60 +1127,6 @@ projects = Project[
 					youtube     = URL("https://www.youtube.com/watch?v=-AOyvGvH7hY"),
 					release_bit = URL("https://github.com/stefan9x/lprs2-TowerDefence/blob/master/towerdefence.bit"),
 					doc         = URL("https://github.com/stefan9x/lprs2-TowerDefence/blob/master/TowerDefence-dokumentacija.docx"),
-				),
-			),
-		),
-		solution = Solution(
-			repo        = URL("https://github.com/X/Y"),
-			youtube     = URL(""),
-			release_bit = URL(""),
-			doc         = URL(""),
-		),
-	),
-	Project(
-		name             = "Advance Tetris",
-		points           = 45,
-		min_team_members = 3,
-		team = Team(
-			pre_registration = "",
-			members = Student[
-				Student(
-					name    = "",
-					surname = "",
-					index   = "RA-xxx/20yy",
-					email   = "@",
-					points  = 0,
-				),
-				Student(
-					name    = "",
-					surname = "",
-					index   = "RA-xxx/20yy",
-					email   = "@",
-					points  = 0,
-				),
-				Student(
-					name    = "",
-					surname = "",
-					index   = "RA-xxx/20yy",
-					email   = "@",
-					points  = 0,
-				),
-			],
-		),
-		spec = Spec(
-			sequel       = true,
-			have_support = false,
-			text = """
-			- Gameplay dovršiti
-			""",
-			resources = URL[
-			],
-			sequel_resources = Dict{String, Solution}(
-				"Advance Tetris" => Solution(
-					repo        = URL("https://github.com/Sandra2606996/MSAK_tetris"),
-					youtube     = URL("https://www.youtube.com/watch?v=Q_IEFTvD00M"),
-					release_bit = URL("https://github.com/Sandra2606996/MSAK_tetris/blob/master/tetris.bit"),
-					doc         = URL("https://github.com/Sandra2606996/MSAK_tetris/blob/master/TETRIS.docx"),
 				),
 			),
 		),
@@ -1814,7 +1766,7 @@ projects = Project[
 		points           = 45,
 		min_team_members = 3,
 		team = Team(
-			pre_registration = "",
+			pre_registration = "Tamara, Marina, Olivera",
 			members = Student[
 				Student(
 					name    = "",
@@ -1846,6 +1798,54 @@ projects = Project[
 			""",
 			resources = URL[
 				URL("https://www.youtube.com/watch?v=iTBiaAzbwHU"),
+			],
+			sequel_resources = Dict{String, Solution}(
+			),
+		),
+		solution = Solution(
+			repo        = URL("https://github.com/X/Y"),
+			youtube     = URL(""),
+			release_bit = URL(""),
+			doc         = URL(""),
+		),
+	),
+	Project(
+		name             = "Tron: Slow Cycle Mastery",
+		points           = 45,
+		min_team_members = 3,
+		team = Team(
+			pre_registration = "Ana, Sanja, Ognjen",
+			members = Student[
+				Student(
+					name    = "",
+					surname = "",
+					index   = "RA-xxx/20yy",
+					email   = "@",
+					points  = 0,
+				),
+				Student(
+					name    = "",
+					surname = "",
+					index   = "RA-xxx/20yy",
+					email   = "@",
+					points  = 0,
+				),
+				Student(
+					name    = "",
+					surname = "",
+					index   = "RA-xxx/20yy",
+					email   = "@",
+					points  = 0,
+				),
+			],
+		),
+		spec = Spec(
+			sequel       = false,
+			have_support = false,
+			text = """
+			""",
+			resources = URL[
+				URL("https://www.youtube.com/watch?v=1zv333wxZFU"),
 			],
 			sequel_resources = Dict{String, Solution}(
 			),
