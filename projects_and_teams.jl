@@ -38,6 +38,8 @@ projects = Project[
 			text = """
 			""",
 			resources = URL[
+				URL(""),
+				URL(""),
 			],
 			sequel_resources = Dict{String, Solution}(
 				"Legend Of Zelda" => Solution(
@@ -299,6 +301,10 @@ projects = Project[
 			- Neki novi feature
 			- Lepše
 			""",
+			resources = URL[
+				URL(""),
+				URL(""),
+			],
 			sequel_resources = Dict{String, Solution}(
 				"The World's Hardest Game" => Solution(
 					repo        = URL("https://github.com/AleksaArsic/LPRS2-WorldsHardestGame"),
