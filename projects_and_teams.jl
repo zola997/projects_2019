@@ -320,7 +320,7 @@ projects = Project[
 		points           = 45,
 		min_team_members = 3,
 		team = Team(
-			pre_registration = "Petar, Tamara, Miloš, Radovan",
+			pre_registration = "",
 			members = Student[
 				Student(
 					name    = "",
@@ -352,6 +352,64 @@ projects = Project[
 			""",
 			resources = URL[
 				URL(""),
+				URL(""),
+			],
+			sequel_resources = Dict{String, Solution}(
+			),
+		),
+		solution = Solution(
+			repo        = URL("https://github.com/X/Y"),
+			youtube     = URL(""),
+			release_bit = URL(""),
+			doc         = URL(""),
+		),
+	),
+	Project(
+		name             = "Catch the flowers",
+		points           = 45,
+		min_team_members = 3,
+		team = Team(
+			pre_registration = "Petar, Tamara, Miloš, Radovan",
+			members = Student[
+				Student(
+					name    = "",
+					surname = "",
+					index   = "RA-xxx/20yy",
+					email   = "@",
+					points  = 0,
+				),
+				Student(
+					name    = "",
+					surname = "",
+					index   = "RA-xxx/20yy",
+					email   = "@",
+					points  = 0,
+				),
+				Student(
+					name    = "",
+					surname = "",
+					index   = "RA-xxx/20yy",
+					email   = "@",
+					points  = 0,
+				),
+			],
+		),
+		spec = Spec(
+			sequel       = false,
+			have_support = false,
+			text = """
+			- Padanje cveća i zemlje
+			- Gameplay
+			- Animacija zeke sa korpom
+				- Okretanje korpe
+				- Njihanje kad je korpa gore.
+					- Zeka miran kad je nadole
+			- Pozadina
+				- Neka dodatna vrsta kompresije
+			- Više vrsta cveća
+			""",
+			resources = URL[
+				URL("https://www.youtube.com/watch?v=duA4BPw3H6E"),
 				URL(""),
 			],
 			sequel_resources = Dict{String, Solution}(
