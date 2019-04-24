@@ -87,7 +87,8 @@ N_students = sum(map(no_of_students, projects))
 # Project stats.
 
 function project_taken(project::Project)
-	!any(map((member) -> member.name == "Name", project.team.members))
+	project.team.pre_registration != "" ||
+		!any(map((member) -> member.name == "", project.team.members))
 end
 
 function project_done(project::Project)
@@ -105,17 +106,26 @@ if false
 	end
 end
 
-if true
+if false
 	println("Project names:")
 	for p in projects
 		println(p.name)
 	end
 end
 
+if true
+	println("Free projects:")
+	for p in projects
+		if !project_taken(p)
+			println(p.name)
+		end
+	end
+end
+
 ###############################################################################
 # Generating tex.
 
-if true
+if false
 	open("Projects.gen.tex", "w") do f
 		w(args...) = println(f, args...)
 		for (idx, p) in enumerate(projects)
