@@ -407,6 +407,8 @@ projects = Project[
 			- Pozadina
 				- Neka dodatna vrsta kompresije
 			- Više vrsta cveća
+			- Broj poena
+			- Postepeno povećavati brzinu igre
 			""",
 			resources = URL[
 				URL("https://www.youtube.com/watch?v=duA4BPw3H6E"),
