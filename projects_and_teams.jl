@@ -1058,7 +1058,7 @@ projects = Project[
 		points           = 45,
 		min_team_members = 3,
 		team = Team(
-			pre_registration = "",
+			pre_registration = "Vukašin, Milenko, Stefan",
 			members = Student[
 				Student(
 					name    = "",
