@@ -211,7 +211,7 @@ projects = Project[
 		),
 	),
 	Project(
-		name             = "Bomberman",
+		name             = "Boomberman",
 		points           = 45,
 		min_team_members = 3,
 		team = Team(
@@ -248,7 +248,7 @@ projects = Project[
 			resources = URL[
 			],
 			sequel_resources = Dict{String, Solution}(
-				"Bomberman" => Solution(
+				"Boomberman" => Solution(
 					repo        = URL("https://github.com/KakucaNebojsa/Boomberman"),
 					youtube     = URL("https://www.youtube.com/watch?v=V5IfcWc_Ebo"),
 					release_bit = URL("https://github.com/KakucaNebojsa/Boomberman/blob/master/Bomberman.bit"),
