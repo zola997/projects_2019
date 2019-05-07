@@ -74,7 +74,7 @@ N_projects = length(projects)
 @show N_projects
 
 function no_of_students(project::Project)
-	if project.team.members[1].name == "Name"
+	if project.team.members[1].name == ""
 		return 0
 	else
 		return length(project.team.members)
@@ -98,6 +98,17 @@ function project_done(project::Project)
 	return done
 end
 
+if true
+	N_taken = 0
+	for project in projects
+		if project_taken(project)
+			global N_taken
+			N_taken += 1
+		end
+	end
+	@show N_taken
+end
+
 if false
 	for project in projects
 		if project_taken(project) && !project_done(project)
@@ -118,6 +129,40 @@ if true
 	for p in projects
 		if !project_taken(p)
 			println(p.name)
+		end
+	end
+end
+
+#TODO Sum all marks, so we could check if studends changed mark field.
+
+if false
+	resources = Set{URL}()
+	for project in projects
+		for r in project.spec.resources
+			push!(resources, r)
+		end
+	end
+	
+	for r in resources
+		println("Resource: ", r)
+	end
+end
+
+if false
+	N_youtube = 0
+	for project in projects
+		if project_taken(project) && project.solution.youtube != ""
+			N_youtube += 1
+		end
+	end
+	@show N_youtube
+end
+
+if false
+	println("Youtube URLs:")
+	for project in projects
+		if project_taken(project) && project.solution.youtube != ""
+			println(project.solution.youtube)
 		end
 	end
 end
@@ -166,40 +211,6 @@ if false
 end
 
 ###############################################################################
-
-#TODO Sum all marks, so we could check if studends changed mark field.
-
-#=
-if false
-	resources = Set{URL}()
-	for project in projects
-		for r in project.spec.resources
-			push!(resources, r)
-		end
-	end
-	
-	for r in resources
-		println("Resource: ", r)
-	end
-end
-
-N_youtube = 0
-for project in projects
-	if project_taken(project) && project.solution.youtube != ""
-		N_youtube += 1
-	end
-end
-@show N_youtube
-
-if false
-	println("Youtube URLs:")
-	for project in projects
-		if project_taken(project) && project.solution.youtube != ""
-			println(project.solution.youtube)
-		end
-	end
-end
-=#
 
 println("End")
 
