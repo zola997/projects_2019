@@ -211,31 +211,31 @@ projects = Project[
 		),
 	),
 	Project(
-		name             = "Boomberman",
+		name             = "Bomberman",
 		points           = 45,
 		min_team_members = 3,
 		team = Team(
 			pre_registration = "Nemanja, Aleksa, Saša",
 			members = Student[
 				Student(
-					name    = "",
-					surname = "",
-					index   = "RA-xxx/20yy",
-					email   = "@",
+					name    = "Nemanja",
+					surname = "Lekić",
+					index   = "RA-048/20155",
+					email   = "nemanjalekic.ns@gmail.com",
 					points  = 0,
 				),
 				Student(
-					name    = "",
-					surname = "",
-					index   = "RA-xxx/20yy",
-					email   = "@",
+					name    = "Aleksa",
+					surname = "Janjatović",
+					index   = "RA-126/2016",
+					email   = "janjatovic.aleksa@gmail.com",
 					points  = 0,
 				),
 				Student(
-					name    = "",
-					surname = "",
-					index   = "RA-xxx/20yy",
-					email   = "@",
+					name    = "Saša",
+					surname = "Serafimovski",
+					index   = "RA-169/2016",
+					email   = "sasha97ns@gmail.com",
 					points  = 0,
 				),
 			],
@@ -248,7 +248,7 @@ projects = Project[
 			resources = URL[
 			],
 			sequel_resources = Dict{String, Solution}(
-				"Boomberman" => Solution(
+				"Bomberman" => Solution(
 					repo        = URL("https://github.com/KakucaNebojsa/Boomberman"),
 					youtube     = URL("https://www.youtube.com/watch?v=V5IfcWc_Ebo"),
 					release_bit = URL("https://github.com/KakucaNebojsa/Boomberman/blob/master/Bomberman.bit"),
