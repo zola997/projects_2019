@@ -93,8 +93,7 @@ projects = Project[
 			text = """
 			""",
 			resources = URL[
-				URL(""),
-				URL(""),
+				URL("https://github.com/suncicam/MinesweeperProjekatLPRS2"),
 			],
 			sequel_resources = Dict{String, Solution}(
 			),
@@ -142,8 +141,7 @@ projects = Project[
 			text = """
 			""",
 			resources = URL[
-				URL(""),
-				URL(""),
+				URL("https://github.com/suncicam/MinesweeperProjekatLPRS2"),
 			],
 			sequel_resources = Dict{String, Solution}(
 			),
@@ -418,7 +416,7 @@ projects = Project[
 			""",
 			resources = URL[
 				URL("https://www.youtube.com/watch?v=duA4BPw3H6E"),
-				URL(""),
+				URL("https://github.com/suncicam/MinesweeperProjekatLPRS2"),
 			],
 			sequel_resources = Dict{String, Solution}(
 			),
@@ -523,8 +521,7 @@ projects = Project[
 			text = """
 			""",
 			resources = URL[
-				URL(""),
-				URL(""),
+				URL("https://github.com/CubeLord/LPRS2-Zelda"),
 			],
 			sequel_resources = Dict{String, Solution}(
 			),
@@ -572,8 +569,7 @@ projects = Project[
 			text = """
 			""",
 			resources = URL[
-				URL(""),
-				URL(""),
+				URL("https://github.com/SuvakovSrdjan/LPRS2_Asteroids_game"),
 			],
 			sequel_resources = Dict{String, Solution}(
 			),
@@ -621,8 +617,7 @@ projects = Project[
 			text = """
 			""",
 			resources = URL[
-				URL("https://github.com/vukse95/super_mario"),
-				URL(""),
+				URL("https://github.com/CubeLord/LPRS2-Zelda"),
 			],
 			sequel_resources = Dict{String, Solution}(
 			),
@@ -671,7 +666,7 @@ projects = Project[
 			""",
 			resources = URL[
 				URL("https://www.youtube.com/watch?v=_vkTPFVyKoo"),
-				URL("https://github.com/vukse95/super_mario"),
+				URL("https://github.com/CubeLord/LPRS2-Zelda"),
 			],
 			sequel_resources = Dict{String, Solution}(
 			),
@@ -888,7 +883,7 @@ projects = Project[
 			text = """
 			""",
 			resources = URL[
-				URL("https://github.com/vukse95/super_mario"),
+				URL("https://github.com/CubeLord/LPRS2-Zelda"),
 			],
 			sequel_resources = Dict{String, Solution}(
 			),
@@ -1249,6 +1244,7 @@ projects = Project[
 			""",
 			resources = URL[
 				URL("https://www.youtube.com/watch?v=QshZeuyFxvk"),
+				URL("https://github.com/suncicam/MinesweeperProjekatLPRS2"),
 			],
 			sequel_resources = Dict{String, Solution}(
 			),
@@ -1296,7 +1292,7 @@ projects = Project[
 			text = """
 			""",
 			resources = URL[
-				URL("https://github.com/vukse95/super_mario"),
+				URL("https://github.com/CubeLord/LPRS2-Zelda"),
 			],
 			sequel_resources = Dict{String, Solution}(
 			),
@@ -1345,6 +1341,7 @@ projects = Project[
 			""",
 			resources = URL[
 				URL("https://www.youtube.com/watch?v=BuXOSBb4hQw"),
+				URL("https://github.com/CubeLord/LPRS2-Zelda"),
 			],
 			sequel_resources = Dict{String, Solution}(
 			),
@@ -1393,6 +1390,7 @@ projects = Project[
 			""",
 			resources = URL[
 				URL("https://www.youtube.com/watch?v=wMpxE9xq2Lw"),
+				URL("https://github.com/CubeLord/LPRS2-Zelda"),
 			],
 			sequel_resources = Dict{String, Solution}(
 			),
@@ -1441,6 +1439,7 @@ projects = Project[
 			""",
 			resources = URL[
 				URL("https://www.youtube.com/watch?v=SPxxfH_NOEA"),
+				URL("https://github.com/suncicam/MinesweeperProjekatLPRS2"),
 			],
 			sequel_resources = Dict{String, Solution}(
 			),
@@ -1489,6 +1488,7 @@ projects = Project[
 			""",
 			resources = URL[
 				URL("https://www.youtube.com/watch?v=AT0j4gZxG2w"),
+				URL("https://github.com/SuvakovSrdjan/LPRS2_Asteroids_game"),
 			],
 			sequel_resources = Dict{String, Solution}(
 			),
@@ -1537,6 +1537,7 @@ projects = Project[
 			""",
 			resources = URL[
 				URL("https://www.youtube.com/watch?v=3Aih37orQKY"),
+				URL("https://github.com/CubeLord/LPRS2-Zelda"),
 			],
 			sequel_resources = Dict{String, Solution}(
 			),
@@ -1585,6 +1586,7 @@ projects = Project[
 			""",
 			resources = URL[
 				URL("https://www.youtube.com/watch?v=4vZnNZ_G6Qk"),
+				URL("https://github.com/CubeLord/LPRS2-Zelda"),
 			],
 			sequel_resources = Dict{String, Solution}(
 			),
@@ -1633,6 +1635,7 @@ projects = Project[
 			""",
 			resources = URL[
 				URL("https://www.youtube.com/watch?v=-Ou5Bco1sHM"),
+				URL("https://github.com/CubeLord/LPRS2-Zelda"),
 			],
 			sequel_resources = Dict{String, Solution}(
 			),
@@ -1681,6 +1684,7 @@ projects = Project[
 			""",
 			resources = URL[
 				URL("https://www.youtube.com/watch?v=cgM_A1Oe0mY"),
+				URL("https://github.com/CubeLord/LPRS2-Zelda"),
 			],
 			sequel_resources = Dict{String, Solution}(
 			),
@@ -1729,6 +1733,7 @@ projects = Project[
 			""",
 			resources = URL[
 				URL("https://www.youtube.com/watch?v=xo4EABMuxCc"),
+				URL("https://github.com/CubeLord/LPRS2-Zelda"),
 			],
 			sequel_resources = Dict{String, Solution}(
 			),
@@ -1777,6 +1782,7 @@ projects = Project[
 			""",
 			resources = URL[
 				URL("https://www.youtube.com/watch?v=zguf7ZeBpA4"),
+				URL("https://github.com/suncicam/MinesweeperProjekatLPRS2"),
 			],
 			sequel_resources = Dict{String, Solution}(
 			),
@@ -1825,6 +1831,7 @@ projects = Project[
 			""",
 			resources = URL[
 				URL("https://www.youtube.com/watch?v=6ljDYeuOFxU"),
+				URL("https://github.com/suncicam/MinesweeperProjekatLPRS2"),
 			],
 			sequel_resources = Dict{String, Solution}(
 			),
@@ -1873,6 +1880,7 @@ projects = Project[
 			""",
 			resources = URL[
 				URL("https://www.youtube.com/watch?v=A54blk-ojA4"),
+				URL("https://github.com/suncicam/MinesweeperProjekatLPRS2"),
 			],
 			sequel_resources = Dict{String, Solution}(
 			),
@@ -1921,6 +1929,7 @@ projects = Project[
 			""",
 			resources = URL[
 				URL("https://www.youtube.com/watch?v=iTBiaAzbwHU"),
+				URL("https://github.com/CubeLord/LPRS2-Zelda"),
 			],
 			sequel_resources = Dict{String, Solution}(
 			),
@@ -1969,6 +1978,7 @@ projects = Project[
 			""",
 			resources = URL[
 				URL("https://www.youtube.com/watch?v=1zv333wxZFU"),
+				URL("https://github.com/suncicam/MinesweeperProjekatLPRS2"),
 			],
 			sequel_resources = Dict{String, Solution}(
 			),
@@ -2017,6 +2027,56 @@ projects = Project[
 			""",
 			resources = URL[
 				URL("https://www.youtube.com/watch?v=xgx7eECkbk0"),
+				URL("https://github.com/SuvakovSrdjan/LPRS2_Asteroids_game"),
+			],
+			sequel_resources = Dict{String, Solution}(
+			),
+		),
+		solution = Solution(
+			repo        = URL("https://github.com/X/Y"),
+			youtube     = URL(""),
+			release_bit = URL(""),
+			doc         = URL(""),
+		),
+	),
+	Project(
+		name             = "Curve Fever",
+		points           = 45,
+		min_team_members = 3,
+		team = Team(
+			pre_registration = "",
+			members = Student[
+				Student(
+					name    = "",
+					surname = "",
+					index   = "RA-xxx/20yy",
+					email   = "@",
+					points  = 0,
+				),
+				Student(
+					name    = "",
+					surname = "",
+					index   = "RA-xxx/20yy",
+					email   = "@",
+					points  = 0,
+				),
+				Student(
+					name    = "",
+					surname = "",
+					index   = "RA-xxx/20yy",
+					email   = "@",
+					points  = 0,
+				),
+			],
+		),
+		spec = Spec(
+			sequel       = false,
+			have_support = false,
+			text = """
+			""",
+			resources = URL[
+				URL("https://www.youtube.com/watch?v=_Rvs2P6MBMU"),
+				URL("https://github.com/SuvakovSrdjan/LPRS2_Asteroids_game"),
 			],
 			sequel_resources = Dict{String, Solution}(
 			),
