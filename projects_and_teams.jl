@@ -462,9 +462,11 @@ projects = Project[
 			sequel       = true,
 			have_support = false,
 			text = """
-			Doraditi igru.
+			Popraviti gameplay.
+			Uraditi napredniju grafiku.
 			""",
 			resources = URL[
+				URL("https://github.com/suncicam/MinesweeperProjekatLPRS2"),
 			],
 			sequel_resources = Dict{String, Solution}(
 				"Potapanje brodića" => Solution(
@@ -1135,6 +1137,9 @@ projects = Project[
 			sequel       = true,
 			have_support = false,
 			text = """
+			Više level-a.
+			Više feature-a.
+			Bolji gameplay.
 			""",
 			resources = URL[
 			],
