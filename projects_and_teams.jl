@@ -416,7 +416,7 @@ projects = Project[
 			""",
 			resources = URL[
 				URL("https://www.youtube.com/watch?v=duA4BPw3H6E"),
-				URL("https://github.com/suncicam/MinesweeperProjekatLPRS2"),
+				URL("https://github.com/stefan9x/lprs2-TowerDefence"),
 			],
 			sequel_resources = Dict{String, Solution}(
 			),
@@ -1249,7 +1249,7 @@ projects = Project[
 			""",
 			resources = URL[
 				URL("https://www.youtube.com/watch?v=QshZeuyFxvk"),
-				URL("https://github.com/suncicam/MinesweeperProjekatLPRS2"),
+				URL("https://github.com/stefan9x/lprs2-TowerDefence"),
 			],
 			sequel_resources = Dict{String, Solution}(
 			),
@@ -1444,7 +1444,7 @@ projects = Project[
 			""",
 			resources = URL[
 				URL("https://www.youtube.com/watch?v=SPxxfH_NOEA"),
-				URL("https://github.com/suncicam/MinesweeperProjekatLPRS2"),
+				URL("https://github.com/stefan9x/lprs2-TowerDefence"),
 			],
 			sequel_resources = Dict{String, Solution}(
 			),
@@ -1787,7 +1787,7 @@ projects = Project[
 			""",
 			resources = URL[
 				URL("https://www.youtube.com/watch?v=zguf7ZeBpA4"),
-				URL("https://github.com/suncicam/MinesweeperProjekatLPRS2"),
+				URL("https://github.com/stefan9x/lprs2-TowerDefence"),
 			],
 			sequel_resources = Dict{String, Solution}(
 			),
@@ -1836,7 +1836,7 @@ projects = Project[
 			""",
 			resources = URL[
 				URL("https://www.youtube.com/watch?v=6ljDYeuOFxU"),
-				URL("https://github.com/suncicam/MinesweeperProjekatLPRS2"),
+				URL("https://github.com/stefan9x/lprs2-TowerDefence"),
 			],
 			sequel_resources = Dict{String, Solution}(
 			),
@@ -1885,7 +1885,7 @@ projects = Project[
 			""",
 			resources = URL[
 				URL("https://www.youtube.com/watch?v=A54blk-ojA4"),
-				URL("https://github.com/suncicam/MinesweeperProjekatLPRS2"),
+				URL("https://github.com/stefan9x/lprs2-TowerDefence"),
 			],
 			sequel_resources = Dict{String, Solution}(
 			),
