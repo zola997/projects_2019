@@ -147,7 +147,7 @@ projects = Project[
 			),
 		),
 		solution = Solution(
-			repo        = URL("https://github.com/skostic14/LPRSproject"),
+			repo        = URL("https://github.com/skostic14/LPRS2Projekat"),
 			youtube     = URL(""),
 			release_bit = URL(""),
 			doc         = URL(""),
