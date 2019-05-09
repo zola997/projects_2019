@@ -469,8 +469,13 @@ projects = Project[
 			sequel       = true,
 			have_support = false,
 			text = """
-			Popraviti gameplay.
-			Uraditi napredniju grafiku.
+			- Dokumentovati:
+				- Hardversko povezivanje ploča (slike, šema, opis)
+				- Protokol puštanja aplikacija (prvo slave pa maste...)
+			- Popraviti gameplay.
+			- Uraditi napredniju grafiku:
+				- Umesto text-mode grafike da bude
+					9b color mode (Minesweeper) grafika
 			""",
 			resources = URL[
 				URL("https://github.com/suncicam/MinesweeperProjekatLPRS2"),
@@ -721,8 +726,12 @@ projects = Project[
 			sequel       = true,
 			have_support = false,
 			text = """
-			Dodati podršku za štoljpi u postojeću Duck Hunt igru
-			i utegnuti gameplay.
+			- Dokumentovati:
+				- Hardverski dizajn elektronike štoljpija (šema)
+				- Hardversko povezivanje štoljpija (slike, šema, opis, pinovi)
+				- Testiranje štoljpija sa Sega_Gun_Test projektom.
+			- Dodati podršku za štoljpi u postojeću Duck Hunt igru.
+			- Utegnuti gameplay.
 			""",
 			resources = URL[
 			],
@@ -1091,8 +1100,14 @@ projects = Project[
 			sequel       = true,
 			have_support = false,
 			text = """
+			- Doraditi postojeću igru.
+				- Animacije.
+				- Skokovi.
+				- Neprijatelji.
+			- Koristiti skripte iz Zelde.
 			""",
 			resources = URL[
+				URL("https://github.com/CubeLord/LPRS2-Zelda")
 			],
 			sequel_resources = Dict{String, Solution}(
 				"Super Mario" => Solution(
