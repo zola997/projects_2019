@@ -654,7 +654,7 @@ projects = Project[
 					name    = "Dainlo",
 					surname = "Puskarevic",
 					index   = "RA-225/2015",
-					email   = "@",
+					email   = "danilopuskarevic@gmail.com",
 					points  = 0,
 				),
 				Student(
