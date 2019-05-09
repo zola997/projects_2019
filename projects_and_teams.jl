@@ -456,6 +456,13 @@ projects = Project[
 					email   = "srdjan.bobos@gmail.com",
 					points  = 0,
 				),
+				Student(
+					name    = "Igor",
+					surname = "Njagul",
+					index   = "RA-115/2014",
+					email   = "igor.njagul@gmail.com",
+					points  = 0,
+				),
 			],
 		),
 		spec = Spec(
