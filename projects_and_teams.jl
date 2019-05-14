@@ -177,8 +177,8 @@ projects = Project[
 				Student(
 					name    = "Filip",
 					surname = "Mihic",
-					index   = "RA-xxx/20yy",
-					email   = "@",
+					index   = "RA-19/2015",
+					email   = "fikimihic@gmail.com",
 					points  = 0,
 				),
 			],
